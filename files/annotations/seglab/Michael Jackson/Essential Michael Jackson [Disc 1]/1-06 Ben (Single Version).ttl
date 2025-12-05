@@ -1,0 +1,149 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.6" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:maker_bef24126e1a6
+    a mo:MusicArtist ;
+    foaf:name "Michael Jackson" .
+
+:record_8d19d39d994b
+    dc:title "Essential Michael Jackson [Disc 1]" ;
+    mo:release_type mo:album ;
+    mo:track :track_87d52aaa3e23 ;
+    a mo:Record ;
+    foaf:maker :maker_bef24126e1a6 .
+
+:segment_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.16S"^^xsd:duration ;
+        tl:onTimeLine :timeline_08b3646d1e55 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:segment_000002
+    event:time [
+        tl:beginsAt "PT0.16S"^^xsd:duration ;
+        tl:duration "PT14.229S"^^xsd:duration ;
+        tl:onTimeLine :timeline_08b3646d1e55 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "intro" .
+
+:segment_000003
+    event:time [
+        tl:beginsAt "PT14.389S"^^xsd:duration ;
+        tl:duration "PT14.091S"^^xsd:duration ;
+        tl:onTimeLine :timeline_08b3646d1e55 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000004
+    event:time [
+        tl:beginsAt "PT28.48S"^^xsd:duration ;
+        tl:duration "PT21.009S"^^xsd:duration ;
+        tl:onTimeLine :timeline_08b3646d1e55 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000005
+    event:time [
+        tl:beginsAt "PT49.489S"^^xsd:duration ;
+        tl:duration "PT13.928S"^^xsd:duration ;
+        tl:onTimeLine :timeline_08b3646d1e55 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000006
+    event:time [
+        tl:beginsAt "PT1M3.417S"^^xsd:duration ;
+        tl:duration "PT21.016S"^^xsd:duration ;
+        tl:onTimeLine :timeline_08b3646d1e55 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000007
+    event:time [
+        tl:beginsAt "PT1M24.433S"^^xsd:duration ;
+        tl:duration "PT28.385S"^^xsd:duration ;
+        tl:onTimeLine :timeline_08b3646d1e55 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "bridge" .
+
+:segment_000008
+    event:time [
+        tl:beginsAt "PT1M52.818S"^^xsd:duration ;
+        tl:duration "PT14.022S"^^xsd:duration ;
+        tl:onTimeLine :timeline_08b3646d1e55 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000009
+    event:time [
+        tl:beginsAt "PT2M6.84S"^^xsd:duration ;
+        tl:duration "PT36.735S"^^xsd:duration ;
+        tl:onTimeLine :timeline_08b3646d1e55 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain_(with_complete_ending)" .
+
+:segment_000010
+    event:time [
+        tl:beginsAt "PT2M43.575S"^^xsd:duration ;
+        tl:duration "PT2.665S"^^xsd:duration ;
+        tl:onTimeLine :timeline_08b3646d1e55 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:timeline_08b3646d1e55
+    a tl:Timeline .
+
+:track_87d52aaa3e23
+    dc:title "Ben (Single Version)" ;
+    mo:available_as <file:Michael%20Jackson/Essential%20Michael%20Jackson%20%5BDisc%201%5D/1-06%20Ben%20(Single%20Version).wav> ;
+    a mo:Track ;
+    foaf:maker :maker_bef24126e1a6 .
+
+<file:Michael%20Jackson/Essential%20Michael%20Jackson%20%5BDisc%201%5D/1-06%20Ben%20(Single%20Version).wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_08b3646d1e55 ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

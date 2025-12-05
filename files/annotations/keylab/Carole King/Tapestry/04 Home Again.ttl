@@ -1,0 +1,79 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.8" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:key_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.311S"^^xsd:duration ;
+        tl:onTimeLine :timeline_a3a356bb1851 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:key_000002
+    event:time [
+        tl:beginsAt "PT0.311S"^^xsd:duration ;
+        tl:duration "PT2M26.131S"^^xsd:duration ;
+        tl:onTimeLine :timeline_a3a356bb1851 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "A" .
+
+:key_000003
+    event:time [
+        tl:beginsAt "PT2M26.442S"^^xsd:duration ;
+        tl:duration "PT2.625S"^^xsd:duration ;
+        tl:onTimeLine :timeline_a3a356bb1851 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:maker_71798d08cb6c
+    a mo:MusicArtist ;
+    foaf:name "Carole King" .
+
+:record_16d66e102672
+    dc:title "Tapestry" ;
+    mo:release_type mo:album ;
+    mo:track :track_4b8571669995 ;
+    a mo:Record ;
+    foaf:maker :maker_71798d08cb6c .
+
+:timeline_a3a356bb1851
+    a tl:Timeline .
+
+:track_4b8571669995
+    dc:title "Home Again" ;
+    mo:available_as <file:Carole%20King/Tapestry/04%20Home%20Again.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_71798d08cb6c .
+
+<file:Carole%20King/Tapestry/04%20Home%20Again.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_a3a356bb1851 ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

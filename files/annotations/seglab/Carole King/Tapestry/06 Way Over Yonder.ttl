@@ -1,0 +1,159 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.6" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:maker_a9fe292e11a7
+    a mo:MusicArtist ;
+    foaf:name "Carole King" .
+
+:record_1f9912bb5cb2
+    dc:title "Tapestry" ;
+    mo:release_type mo:album ;
+    mo:track :track_b09ab67582cb ;
+    a mo:Record ;
+    foaf:maker :maker_a9fe292e11a7 .
+
+:segment_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.255S"^^xsd:duration ;
+        tl:onTimeLine :timeline_55416afd3dcf ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:segment_000002
+    event:time [
+        tl:beginsAt "PT0.255S"^^xsd:duration ;
+        tl:duration "PT4.845S"^^xsd:duration ;
+        tl:onTimeLine :timeline_55416afd3dcf ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "intro" .
+
+:segment_000003
+    event:time [
+        tl:beginsAt "PT5.1S"^^xsd:duration ;
+        tl:duration "PT32.396S"^^xsd:duration ;
+        tl:onTimeLine :timeline_55416afd3dcf ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000004
+    event:time [
+        tl:beginsAt "PT37.496S"^^xsd:duration ;
+        tl:duration "PT32.35S"^^xsd:duration ;
+        tl:onTimeLine :timeline_55416afd3dcf ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "bridge" .
+
+:segment_000005
+    event:time [
+        tl:beginsAt "PT1M9.846S"^^xsd:duration ;
+        tl:duration "PT32.49S"^^xsd:duration ;
+        tl:onTimeLine :timeline_55416afd3dcf ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000006
+    event:time [
+        tl:beginsAt "PT1M42.336S"^^xsd:duration ;
+        tl:duration "PT32.85S"^^xsd:duration ;
+        tl:onTimeLine :timeline_55416afd3dcf ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "bridge" .
+
+:segment_000007
+    event:time [
+        tl:beginsAt "PT2M15.186S"^^xsd:duration ;
+        tl:duration "PT32.196S"^^xsd:duration ;
+        tl:onTimeLine :timeline_55416afd3dcf ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000008
+    event:time [
+        tl:beginsAt "PT2M47.382S"^^xsd:duration ;
+        tl:duration "PT31.092S"^^xsd:duration ;
+        tl:onTimeLine :timeline_55416afd3dcf ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "instrumental_solo" .
+
+:segment_000009
+    event:time [
+        tl:beginsAt "PT3M18.474S"^^xsd:duration ;
+        tl:duration "PT31.517S"^^xsd:duration ;
+        tl:onTimeLine :timeline_55416afd3dcf ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000010
+    event:time [
+        tl:beginsAt "PT3M49.991S"^^xsd:duration ;
+        tl:duration "PT51.624S"^^xsd:duration ;
+        tl:onTimeLine :timeline_55416afd3dcf ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "outro" .
+
+:segment_000011
+    event:time [
+        tl:beginsAt "PT4M41.615S"^^xsd:duration ;
+        tl:duration "PT2.692S"^^xsd:duration ;
+        tl:onTimeLine :timeline_55416afd3dcf ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:timeline_55416afd3dcf
+    a tl:Timeline .
+
+:track_b09ab67582cb
+    dc:title "Way Over Yonder" ;
+    mo:available_as <file:Carole%20King/Tapestry/06%20Way%20Over%20Yonder.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_a9fe292e11a7 .
+
+<file:Carole%20King/Tapestry/06%20Way%20Over%20Yonder.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_55416afd3dcf ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

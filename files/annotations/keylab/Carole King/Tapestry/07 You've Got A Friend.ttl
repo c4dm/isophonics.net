@@ -1,0 +1,119 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.8" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:key_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.229S"^^xsd:duration ;
+        tl:onTimeLine :timeline_83694f881ba5 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:key_000002
+    event:time [
+        tl:beginsAt "PT0.229S"^^xsd:duration ;
+        tl:duration "PT11.688S"^^xsd:duration ;
+        tl:onTimeLine :timeline_83694f881ba5 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Ab" .
+
+:key_000003
+    event:time [
+        tl:beginsAt "PT11.917S"^^xsd:duration ;
+        tl:duration "PT46.288S"^^xsd:duration ;
+        tl:onTimeLine :timeline_83694f881ba5 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "F:minor" .
+
+:key_000004
+    event:time [
+        tl:beginsAt "PT58.205S"^^xsd:duration ;
+        tl:duration "PT50.776S"^^xsd:duration ;
+        tl:onTimeLine :timeline_83694f881ba5 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Ab" .
+
+:key_000005
+    event:time [
+        tl:beginsAt "PT1M48.981S"^^xsd:duration ;
+        tl:duration "PT45.536S"^^xsd:duration ;
+        tl:onTimeLine :timeline_83694f881ba5 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "F:minor" .
+
+:key_000006
+    event:time [
+        tl:beginsAt "PT2M34.517S"^^xsd:duration ;
+        tl:duration "PT2M32.539S"^^xsd:duration ;
+        tl:onTimeLine :timeline_83694f881ba5 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Ab" .
+
+:key_000007
+    event:time [
+        tl:beginsAt "PT5M7.056S"^^xsd:duration ;
+        tl:duration "PT2.611S"^^xsd:duration ;
+        tl:onTimeLine :timeline_83694f881ba5 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:maker_733d599c6501
+    a mo:MusicArtist ;
+    foaf:name "Carole King" .
+
+:record_97cd0a791b77
+    dc:title "Tapestry" ;
+    mo:release_type mo:album ;
+    mo:track :track_a0ae3fe58cf1 ;
+    a mo:Record ;
+    foaf:maker :maker_733d599c6501 .
+
+:timeline_83694f881ba5
+    a tl:Timeline .
+
+:track_a0ae3fe58cf1
+    dc:title "You've Got A Friend" ;
+    mo:available_as <file:Carole%20King/Tapestry/07%20You've%20Got%20A%20Friend.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_733d599c6501 .
+
+<file:Carole%20King/Tapestry/07%20You've%20Got%20A%20Friend.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_83694f881ba5 ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

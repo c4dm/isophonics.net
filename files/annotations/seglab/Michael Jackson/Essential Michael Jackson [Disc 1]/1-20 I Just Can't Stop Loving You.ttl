@@ -1,0 +1,169 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.6" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:maker_19fdb2685e9b
+    a mo:MusicArtist ;
+    foaf:name "Michael Jackson" .
+
+:record_00bab4bf0f3b
+    dc:title "Essential Michael Jackson [Disc 1]" ;
+    mo:release_type mo:album ;
+    mo:track :track_2f49067cbc15 ;
+    a mo:Record ;
+    foaf:maker :maker_19fdb2685e9b .
+
+:segment_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.38S"^^xsd:duration ;
+        tl:onTimeLine :timeline_b6356d8d3d2d ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:segment_000002
+    event:time [
+        tl:beginsAt "PT0.38S"^^xsd:duration ;
+        tl:duration "PT33.452S"^^xsd:duration ;
+        tl:onTimeLine :timeline_b6356d8d3d2d ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "intro" .
+
+:segment_000003
+    event:time [
+        tl:beginsAt "PT33.832S"^^xsd:duration ;
+        tl:duration "PT38.47S"^^xsd:duration ;
+        tl:onTimeLine :timeline_b6356d8d3d2d ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000004
+    event:time [
+        tl:beginsAt "PT1M12.302S"^^xsd:duration ;
+        tl:duration "PT38.321S"^^xsd:duration ;
+        tl:onTimeLine :timeline_b6356d8d3d2d ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000005
+    event:time [
+        tl:beginsAt "PT1M50.623S"^^xsd:duration ;
+        tl:duration "PT19.167S"^^xsd:duration ;
+        tl:onTimeLine :timeline_b6356d8d3d2d ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000006
+    event:time [
+        tl:beginsAt "PT2M9.79S"^^xsd:duration ;
+        tl:duration "PT4.827S"^^xsd:duration ;
+        tl:onTimeLine :timeline_b6356d8d3d2d ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "break" .
+
+:segment_000007
+    event:time [
+        tl:beginsAt "PT2M14.617S"^^xsd:duration ;
+        tl:duration "PT38.327S"^^xsd:duration ;
+        tl:onTimeLine :timeline_b6356d8d3d2d ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000008
+    event:time [
+        tl:beginsAt "PT2M52.944S"^^xsd:duration ;
+        tl:duration "PT19.183S"^^xsd:duration ;
+        tl:onTimeLine :timeline_b6356d8d3d2d ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000009
+    event:time [
+        tl:beginsAt "PT3M12.127S"^^xsd:duration ;
+        tl:duration "PT2.408S"^^xsd:duration ;
+        tl:onTimeLine :timeline_b6356d8d3d2d ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "break" .
+
+:segment_000010
+    event:time [
+        tl:beginsAt "PT3M14.535S"^^xsd:duration ;
+        tl:duration "PT19.163S"^^xsd:duration ;
+        tl:onTimeLine :timeline_b6356d8d3d2d ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "bridge" .
+
+:segment_000011
+    event:time [
+        tl:beginsAt "PT3M33.698S"^^xsd:duration ;
+        tl:duration "PT37.122S"^^xsd:duration ;
+        tl:onTimeLine :timeline_b6356d8d3d2d ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain_(fade-out)" .
+
+:segment_000012
+    event:time [
+        tl:beginsAt "PT4M10.82S"^^xsd:duration ;
+        tl:duration "PT1.06S"^^xsd:duration ;
+        tl:onTimeLine :timeline_b6356d8d3d2d ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:timeline_b6356d8d3d2d
+    a tl:Timeline .
+
+:track_2f49067cbc15
+    dc:title "I Just Can't Stop Loving You" ;
+    mo:available_as <file:Michael%20Jackson/Essential%20Michael%20Jackson%20%5BDisc%201%5D/1-20%20I%20Just%20Can't%20Stop%20Loving%20You.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_19fdb2685e9b .
+
+<file:Michael%20Jackson/Essential%20Michael%20Jackson%20%5BDisc%201%5D/1-20%20I%20Just%20Can't%20Stop%20Loving%20You.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_b6356d8d3d2d ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

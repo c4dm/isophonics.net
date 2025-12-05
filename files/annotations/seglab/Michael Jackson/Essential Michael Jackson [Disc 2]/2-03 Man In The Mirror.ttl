@@ -1,0 +1,189 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.6" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:maker_395c9e25316d
+    a mo:MusicArtist ;
+    foaf:name "Michael Jackson" .
+
+:record_047ee344753c
+    dc:title "Essential Michael Jackson [Disc 2]" ;
+    mo:release_type mo:album ;
+    mo:track :track_98b9c1a01c15 ;
+    a mo:Record ;
+    foaf:maker :maker_395c9e25316d .
+
+:segment_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.46S"^^xsd:duration ;
+        tl:onTimeLine :timeline_86b7970c7d66 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:segment_000002
+    event:time [
+        tl:beginsAt "PT0.46S"^^xsd:duration ;
+        tl:duration "PT9.548S"^^xsd:duration ;
+        tl:onTimeLine :timeline_86b7970c7d66 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "intro" .
+
+:segment_000003
+    event:time [
+        tl:beginsAt "PT10.008S"^^xsd:duration ;
+        tl:duration "PT38.29S"^^xsd:duration ;
+        tl:onTimeLine :timeline_86b7970c7d66 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000004
+    event:time [
+        tl:beginsAt "PT48.298S"^^xsd:duration ;
+        tl:duration "PT19.137S"^^xsd:duration ;
+        tl:onTimeLine :timeline_86b7970c7d66 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "bridge" .
+
+:segment_000005
+    event:time [
+        tl:beginsAt "PT1M7.435S"^^xsd:duration ;
+        tl:duration "PT19.13S"^^xsd:duration ;
+        tl:onTimeLine :timeline_86b7970c7d66 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000006
+    event:time [
+        tl:beginsAt "PT1M26.565S"^^xsd:duration ;
+        tl:duration "PT9.576S"^^xsd:duration ;
+        tl:onTimeLine :timeline_86b7970c7d66 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "break" .
+
+:segment_000007
+    event:time [
+        tl:beginsAt "PT1M36.141S"^^xsd:duration ;
+        tl:duration "PT19.138S"^^xsd:duration ;
+        tl:onTimeLine :timeline_86b7970c7d66 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000008
+    event:time [
+        tl:beginsAt "PT1M55.279S"^^xsd:duration ;
+        tl:duration "PT19.134S"^^xsd:duration ;
+        tl:onTimeLine :timeline_86b7970c7d66 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "bridge" .
+
+:segment_000009
+    event:time [
+        tl:beginsAt "PT2M14.413S"^^xsd:duration ;
+        tl:duration "PT19.139S"^^xsd:duration ;
+        tl:onTimeLine :timeline_86b7970c7d66 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000010
+    event:time [
+        tl:beginsAt "PT2M33.552S"^^xsd:duration ;
+        tl:duration "PT19.139S"^^xsd:duration ;
+        tl:onTimeLine :timeline_86b7970c7d66 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000011
+    event:time [
+        tl:beginsAt "PT2M52.691S"^^xsd:duration ;
+        tl:duration "PT23.903S"^^xsd:duration ;
+        tl:onTimeLine :timeline_86b7970c7d66 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000012
+    event:time [
+        tl:beginsAt "PT3M16.594S"^^xsd:duration ;
+        tl:duration "PT19.169S"^^xsd:duration ;
+        tl:onTimeLine :timeline_86b7970c7d66 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000013
+    event:time [
+        tl:beginsAt "PT3M35.763S"^^xsd:duration ;
+        tl:duration "PT1M42.977S"^^xsd:duration ;
+        tl:onTimeLine :timeline_86b7970c7d66 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "outro" .
+
+:segment_000014
+    event:time [
+        tl:beginsAt "PT5M18.74S"^^xsd:duration ;
+        tl:duration "PT0.22S"^^xsd:duration ;
+        tl:onTimeLine :timeline_86b7970c7d66 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:timeline_86b7970c7d66
+    a tl:Timeline .
+
+:track_98b9c1a01c15
+    dc:title "Man In The Mirror" ;
+    mo:available_as <file:Michael%20Jackson/Essential%20Michael%20Jackson%20%5BDisc%202%5D/2-03%20Man%20In%20The%20Mirror.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_395c9e25316d .
+
+<file:Michael%20Jackson/Essential%20Michael%20Jackson%20%5BDisc%202%5D/2-03%20Man%20In%20The%20Mirror.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_86b7970c7d66 ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

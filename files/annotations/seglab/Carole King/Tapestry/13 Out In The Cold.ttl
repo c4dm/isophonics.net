@@ -1,0 +1,169 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.6" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:maker_87e7f74b481b
+    a mo:MusicArtist ;
+    foaf:name "Carole King" .
+
+:record_f2d277923e68
+    dc:title "Tapestry" ;
+    mo:release_type mo:album ;
+    mo:track :track_6ce87aafb529 ;
+    a mo:Record ;
+    foaf:maker :maker_87e7f74b481b .
+
+:segment_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.275S"^^xsd:duration ;
+        tl:onTimeLine :timeline_aff6d0429b7b ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:segment_000002
+    event:time [
+        tl:beginsAt "PT0.275S"^^xsd:duration ;
+        tl:duration "PT8.825S"^^xsd:duration ;
+        tl:onTimeLine :timeline_aff6d0429b7b ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "intro" .
+
+:segment_000003
+    event:time [
+        tl:beginsAt "PT9.1S"^^xsd:duration ;
+        tl:duration "PT17.238S"^^xsd:duration ;
+        tl:onTimeLine :timeline_aff6d0429b7b ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000004
+    event:time [
+        tl:beginsAt "PT26.338S"^^xsd:duration ;
+        tl:duration "PT17.496S"^^xsd:duration ;
+        tl:onTimeLine :timeline_aff6d0429b7b ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000005
+    event:time [
+        tl:beginsAt "PT43.834S"^^xsd:duration ;
+        tl:duration "PT17.155S"^^xsd:duration ;
+        tl:onTimeLine :timeline_aff6d0429b7b ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000006
+    event:time [
+        tl:beginsAt "PT1M0.989S"^^xsd:duration ;
+        tl:duration "PT17.348S"^^xsd:duration ;
+        tl:onTimeLine :timeline_aff6d0429b7b ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000007
+    event:time [
+        tl:beginsAt "PT1M18.337S"^^xsd:duration ;
+        tl:duration "PT4.308S"^^xsd:duration ;
+        tl:onTimeLine :timeline_aff6d0429b7b ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "break" .
+
+:segment_000008
+    event:time [
+        tl:beginsAt "PT1M22.645S"^^xsd:duration ;
+        tl:duration "PT17.268S"^^xsd:duration ;
+        tl:onTimeLine :timeline_aff6d0429b7b ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "bridge" .
+
+:segment_000009
+    event:time [
+        tl:beginsAt "PT1M39.913S"^^xsd:duration ;
+        tl:duration "PT17.217S"^^xsd:duration ;
+        tl:onTimeLine :timeline_aff6d0429b7b ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000010
+    event:time [
+        tl:beginsAt "PT1M57.13S"^^xsd:duration ;
+        tl:duration "PT13.011S"^^xsd:duration ;
+        tl:onTimeLine :timeline_aff6d0429b7b ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000011
+    event:time [
+        tl:beginsAt "PT2M10.141S"^^xsd:duration ;
+        tl:duration "PT31.724S"^^xsd:duration ;
+        tl:onTimeLine :timeline_aff6d0429b7b ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "outro" .
+
+:segment_000012
+    event:time [
+        tl:beginsAt "PT2M41.865S"^^xsd:duration ;
+        tl:duration "PT3.335S"^^xsd:duration ;
+        tl:onTimeLine :timeline_aff6d0429b7b ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:timeline_aff6d0429b7b
+    a tl:Timeline .
+
+:track_6ce87aafb529
+    dc:title "Out In The Cold" ;
+    mo:available_as <file:Carole%20King/Tapestry/13%20Out%20In%20The%20Cold.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_87e7f74b481b .
+
+<file:Carole%20King/Tapestry/13%20Out%20In%20The%20Cold.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_aff6d0429b7b ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

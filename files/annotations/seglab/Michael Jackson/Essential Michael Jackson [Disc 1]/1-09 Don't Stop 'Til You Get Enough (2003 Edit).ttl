@@ -1,0 +1,219 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.6" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:maker_d9c6b9533a7b
+    a mo:MusicArtist ;
+    foaf:name "Michael Jackson" .
+
+:record_f64aede2013a
+    dc:title "Essential Michael Jackson [Disc 1]" ;
+    mo:release_type mo:album ;
+    mo:track :track_711482dc7b5a ;
+    a mo:Record ;
+    foaf:maker :maker_d9c6b9533a7b .
+
+:segment_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.32S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fe2f6db70564 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:segment_000002
+    event:time [
+        tl:beginsAt "PT0.32S"^^xsd:duration ;
+        tl:duration "PT9.269S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fe2f6db70564 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "intro" .
+
+:segment_000003
+    event:time [
+        tl:beginsAt "PT9.589S"^^xsd:duration ;
+        tl:duration "PT16.129S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fe2f6db70564 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000004
+    event:time [
+        tl:beginsAt "PT25.718S"^^xsd:duration ;
+        tl:duration "PT16.129S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fe2f6db70564 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000005
+    event:time [
+        tl:beginsAt "PT41.847S"^^xsd:duration ;
+        tl:duration "PT16.125S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fe2f6db70564 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000006
+    event:time [
+        tl:beginsAt "PT57.972S"^^xsd:duration ;
+        tl:duration "PT16.15S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fe2f6db70564 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000007
+    event:time [
+        tl:beginsAt "PT1M14.122S"^^xsd:duration ;
+        tl:duration "PT16.12S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fe2f6db70564 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000008
+    event:time [
+        tl:beginsAt "PT1M30.242S"^^xsd:duration ;
+        tl:duration "PT16.136S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fe2f6db70564 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000009
+    event:time [
+        tl:beginsAt "PT1M46.378S"^^xsd:duration ;
+        tl:duration "PT16.142S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fe2f6db70564 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000010
+    event:time [
+        tl:beginsAt "PT2M2.52S"^^xsd:duration ;
+        tl:duration "PT16.141S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fe2f6db70564 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000011
+    event:time [
+        tl:beginsAt "PT2M18.661S"^^xsd:duration ;
+        tl:duration "PT14.87S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fe2f6db70564 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "instrumental" .
+
+:segment_000012
+    event:time [
+        tl:beginsAt "PT2M33.531S"^^xsd:duration ;
+        tl:duration "PT9.311S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fe2f6db70564 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "intro" .
+
+:segment_000013
+    event:time [
+        tl:beginsAt "PT2M42.842S"^^xsd:duration ;
+        tl:duration "PT16.149S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fe2f6db70564 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000014
+    event:time [
+        tl:beginsAt "PT2M58.991S"^^xsd:duration ;
+        tl:duration "PT16.118S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fe2f6db70564 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000015
+    event:time [
+        tl:beginsAt "PT3M15.109S"^^xsd:duration ;
+        tl:duration "PT24.211S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fe2f6db70564 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000016
+    event:time [
+        tl:beginsAt "PT3M39.32S"^^xsd:duration ;
+        tl:duration "PT15.725S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fe2f6db70564 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain_(fade-out)" .
+
+:segment_000017
+    event:time [
+        tl:beginsAt "PT3M55.045S"^^xsd:duration ;
+        tl:duration "PT1.422S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fe2f6db70564 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:timeline_fe2f6db70564
+    a tl:Timeline .
+
+:track_711482dc7b5a
+    dc:title "Don't Stop 'Til You Get Enough (2003 Edit)" ;
+    mo:available_as <file:Michael%20Jackson/Essential%20Michael%20Jackson%20%5BDisc%201%5D/1-09%20Don't%20Stop%20'Til%20You%20Get%20Enough%20(2003%20Edit).wav> ;
+    a mo:Track ;
+    foaf:maker :maker_d9c6b9533a7b .
+
+<file:Michael%20Jackson/Essential%20Michael%20Jackson%20%5BDisc%201%5D/1-09%20Don't%20Stop%20'Til%20You%20Get%20Enough%20(2003%20Edit).wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_fe2f6db70564 ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

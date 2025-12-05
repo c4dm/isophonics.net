@@ -1,0 +1,139 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.8" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:key_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.272S"^^xsd:duration ;
+        tl:onTimeLine :timeline_dfa47d8b6765 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:key_000002
+    event:time [
+        tl:beginsAt "PT0.272S"^^xsd:duration ;
+        tl:duration "PT23.68S"^^xsd:duration ;
+        tl:onTimeLine :timeline_dfa47d8b6765 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "A:minor" .
+
+:key_000003
+    event:time [
+        tl:beginsAt "PT23.952S"^^xsd:duration ;
+        tl:duration "PT23.489S"^^xsd:duration ;
+        tl:onTimeLine :timeline_dfa47d8b6765 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "F" .
+
+:key_000004
+    event:time [
+        tl:beginsAt "PT47.441S"^^xsd:duration ;
+        tl:duration "PT23.475S"^^xsd:duration ;
+        tl:onTimeLine :timeline_dfa47d8b6765 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "A:minor" .
+
+:key_000005
+    event:time [
+        tl:beginsAt "PT1M10.916S"^^xsd:duration ;
+        tl:duration "PT41.563S"^^xsd:duration ;
+        tl:onTimeLine :timeline_dfa47d8b6765 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "F" .
+
+:key_000006
+    event:time [
+        tl:beginsAt "PT1M52.479S"^^xsd:duration ;
+        tl:duration "PT59.689S"^^xsd:duration ;
+        tl:onTimeLine :timeline_dfa47d8b6765 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "A:minor" .
+
+:key_000007
+    event:time [
+        tl:beginsAt "PT2M52.168S"^^xsd:duration ;
+        tl:duration "PT41.519S"^^xsd:duration ;
+        tl:onTimeLine :timeline_dfa47d8b6765 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "F" .
+
+:key_000008
+    event:time [
+        tl:beginsAt "PT3M33.687S"^^xsd:duration ;
+        tl:duration "PT17.346S"^^xsd:duration ;
+        tl:onTimeLine :timeline_dfa47d8b6765 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "C" .
+
+:key_000009
+    event:time [
+        tl:beginsAt "PT3M51.033S"^^xsd:duration ;
+        tl:duration "PT2.54S"^^xsd:duration ;
+        tl:onTimeLine :timeline_dfa47d8b6765 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:maker_9d242350475a
+    a mo:MusicArtist ;
+    foaf:name "Carole King" .
+
+:record_71fdeef6c42e
+    dc:title "Tapestry" ;
+    mo:release_type mo:album ;
+    mo:track :track_e883b33c7485 ;
+    a mo:Record ;
+    foaf:maker :maker_9d242350475a .
+
+:timeline_dfa47d8b6765
+    a tl:Timeline .
+
+:track_e883b33c7485
+    dc:title "It's Too Late" ;
+    mo:available_as <file:Carole%20King/Tapestry/03%20It's%20Too%20Late.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_9d242350475a .
+
+<file:Carole%20King/Tapestry/03%20It's%20Too%20Late.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_dfa47d8b6765 ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

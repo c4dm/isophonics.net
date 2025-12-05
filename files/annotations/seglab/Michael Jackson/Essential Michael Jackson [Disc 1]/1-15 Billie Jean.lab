@@ -1,0 +1,15 @@
+0.000	0.015		silence
+0.015	28.776		intro
+28.776	53.399		versea
+53.399	69.776		verseb
+69.776	86.157		bridge
+86.157	110.747		refraina
+110.747	135.321		versea
+135.321	151.685		verseb
+151.685	168.076		bridge
+168.076	184.426		refrainb
+184.426	208.971		refraina
+208.971	233.543		instrumental_solo/refrain
+233.543	258.072		refraina
+258.072	291.895		outro
+291.895	292.960		silence
